@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppData } from "../contexts/AppDataContext";
-import "../styles/Nutrition.css";
+
 
 // Simple donut SVG generator for macro breakdown
 function MacroDonut({ protein, carbs, fat }) {
@@ -72,28 +72,28 @@ function Nutrition() {
   );
 
   return (
-    <div className="nutrition-container">
-      <h2>Nutrition Details</h2>
-      <div className="nutrition-row">
-        <div className="donut-col">
+    <div className="ml-[200px] md:ml-0 md:mt-16 px-4 py-8 max-w-3xl mx-auto">
+      <h2 className="text-2xl text-primary font-bold mb-7">Nutrition Details</h2>
+      <div className="flex flex-wrap gap-8 items-center">
+        <div className="flex-shrink-0 bg-surfacelight rounded-2xl shadow p-3">
           <MacroDonut protein={total.protein} carbs={total.carbs} fat={total.fat} />
         </div>
-        <div className="nutrients-col">
-          <div className="n-row">
-            <span className="n-label">Total Calories:</span>
-            <span className="n-value">{total.calories} kcal</span>
+        <div className="flex-1 min-w-[190px]">
+          <div className="flex justify-between py-1 text-white text-lg font-semibold">
+            <span className="text-secondary">Total Calories:</span>
+            <span className="text-primary">{total.calories} kcal</span>
           </div>
-          <div className="n-row">
-            <span className="n-label">Protein:</span>
-            <span className="n-value protein">{total.protein} g</span>
+          <div className="flex justify-between py-1 text-lg font-semibold">
+            <span className="text-secondary">Protein:</span>
+            <span className="text-accent">{total.protein} g</span>
           </div>
-          <div className="n-row">
-            <span className="n-label">Carbs:</span>
-            <span className="n-value carbs">{total.carbs} g</span>
+          <div className="flex justify-between py-1 text-lg font-semibold">
+            <span className="text-secondary">Carbs:</span>
+            <span className="text-primary">{total.carbs} g</span>
           </div>
-          <div className="n-row">
-            <span className="n-label">Fat:</span>
-            <span className="n-value fat">{total.fat} g</span>
+          <div className="flex justify-between py-1 text-lg font-semibold">
+            <span className="text-secondary">Fat:</span>
+            <span className="text-secondary">{total.fat} g</span>
           </div>
         </div>
       </div>
