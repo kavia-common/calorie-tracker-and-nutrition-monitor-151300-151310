@@ -1,0 +1,74 @@
+.foodlog-container {
+  margin-left: 220px;
+  padding: 2.1rem 1.2rem;
+}
+@media (max-width: 700px) {
+  .foodlog-container { margin-left: 0; margin-top: 65px; }
+}
+h2 {
+  font-size: 1.5rem;
+  color: #2E86AB;
+  margin-bottom: .9rem;
+}
+.empty-log {
+  color: #F6C85F;
+  background: #2E86AB16;
+  border-radius: 11px;
+  padding: 1.6em 1em;
+  margin-top: 1em;
+}
+
+.meal-section {
+  margin-bottom: 2rem;
+}
+.meal-title {
+  font-weight: 700;
+  color: #6FB07F;
+  font-size: 1.17rem;
+  margin: 1.2em 0 .2em 0;
+}
+.meal-list {
+  list-style: none;
+  padding: 0;
+}
+.meal-item {
+  background: var(--bg-secondary, #202830);
+  color: var(--text-primary, #fff);
+  border: 1.5px solid #2E86AB44;
+  border-radius: 7px;
+  margin-bottom: .5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+  padding: .7em 1.1em;
+  box-shadow: 0 1px 4px #0002;
+}
+.food-name {
+  font-size: 1.12em;
+  font-weight: 600;
+  color: #2E86AB;
+  min-width: 110px;
+}
+.food-nutrition {
+  font-size: 1em;
+  display: flex;
+  gap: .8em;
+  color: #F6C85F;
+}
+.cals {
+  color: #E87A41;
+  font-weight: 700;
+}
+.remove-entry {
+  margin-left: auto;
+  border: none;
+  background: #E87A41;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 3px;
+  padding: 0.29em 0.68em;
+  cursor: pointer;
+  transition: background .14s;
+}
+.remove-entry:hover { background: #C7652A; }

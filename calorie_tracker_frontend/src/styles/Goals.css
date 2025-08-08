@@ -1,0 +1,51 @@
+.goals-container {
+  margin-left: 220px;
+  padding: 2rem 1.2rem;
+  max-width: 420px;
+}
+@media (max-width: 700px) {
+  .goals-container { margin-left: 0; margin-top: 65px; }
+}
+h2 {
+  color: #2E86AB;
+  margin-bottom: 1.3rem;
+}
+.goal-message {
+  background: #6FB07F99;
+  color: #fff;
+  padding: 0.6em 1em;
+  border-radius: 7px;
+  margin-bottom: .8em;
+  font-weight: 500;
+}
+.goal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.goal-form label {
+  font-weight: 600;
+  color: #2E86AB;
+  margin-bottom: .25em;
+}
+.goal-form input[type="number"] {
+  padding: .68em .9em;
+  border: 1.1px solid #6FB07F88;
+  border-radius: 7px;
+  font-size: 1em;
+  outline: none;
+  margin-top: .21em;
+}
+.btn {
+  background: #2E86AB;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0.7em 0;
+  margin-top: .5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background .13s;
+}
+.btn:hover { background: #256789; }
